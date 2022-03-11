@@ -16,7 +16,7 @@ struct Question {
             Answer(text: "Рыбу", type: .cat),
             Answer(text: "Капусту", type: .rabbit),
             Answer(text: "Курицу", type: .fox)]),
-        Question(text: "Как вы любите проводить свободное время?", type: .multiplie, answers: [
+        Question(text: "Как вы любите проводить свободное время?", type: .multiple, answers: [
             Answer(text: "Бегать", type: .dog),
             Answer(text: "Спать", type: .cat),
             Answer(text: "Трахаться", type: .rabbit),

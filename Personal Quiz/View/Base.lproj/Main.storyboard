@@ -223,12 +223,6 @@
                             <constraint firstItem="Oaz-eO-uLD" firstAttribute="trailing" secondItem="nVT-1v-res" secondAttribute="trailing" constant="20" id="gyB-2M-785"/>
                             <constraint firstItem="Oaz-eO-uLD" firstAttribute="bottom" secondItem="nVT-1v-res" secondAttribute="bottom" constant="40" id="lhy-lB-9W8"/>
                         </constraints>
-                        <variation key="default">
-                            <mask key="subviews">
-                                <exclude reference="GdO-5a-nzs"/>
-                                <exclude reference="cM4-5R-go6"/>
-                            </mask>
-                        </variation>
                     </view>
                     <navigationItem key="navigationItem" id="R4Z-d5-oOY">
                         <barButtonItem key="rightBarButtonItem" title="DELETE ME" id="NMB-Ga-PIz">
@@ -238,6 +232,9 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="multiplyStackView" destination="GdO-5a-nzs" id="mvQ-Tp-oGp"/>
+                        <outlet property="rangeStackView" destination="MaN-8H-7AW" id="NTv-Ft-77N"/>
+                        <outlet property="singleStackView" destination="cM4-5R-go6" id="4De-4U-C4a"/>
                         <segue destination="0BK-w2-GxQ" kind="push" id="Yfs-th-gh6"/>
                     </connections>
                 </viewController>
