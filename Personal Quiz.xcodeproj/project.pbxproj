@@ -81,6 +81,15 @@
 			path = App;
 			sourceTree = "<group>";
 		};
+		E701071027DBD38900E7002B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E7F2E9B727D77E2500A9E63C /* LaunchScreen.storyboard */,
+				E7F2E9B227D77E2400A9E63C /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		E7F2E9A027D77E2400A9E63C = {
 			isa = PBXGroup;
 			children = (
@@ -101,8 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				E701070527DA6D6200E7002B /* App */,
-				E7F2E9B727D77E2500A9E63C /* LaunchScreen.storyboard */,
-				E7F2E9B227D77E2400A9E63C /* Main.storyboard */,
+				E701071027DBD38900E7002B /* View */,
 				E701070427DA6ACB00E7002B /* Models */,
 				E701070327DA53E400E7002B /* View Controllers */,
 			);
