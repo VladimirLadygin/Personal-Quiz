@@ -204,21 +204,33 @@
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="31"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                        <connections>
+                                            <action selector="singleButtonPressed:" destination="R2u-Ze-cyN" eventType="touchUpInside" id="DT7-Hu-TLq"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="edN-dI-bD0">
                                         <rect key="frame" x="0.0" y="45" width="374" height="31"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                        <connections>
+                                            <action selector="singleButtonPressed:" destination="R2u-Ze-cyN" eventType="touchUpInside" id="x2r-Qo-QVE"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ul6-sL-7vv">
                                         <rect key="frame" x="0.0" y="90" width="374" height="31"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                        <connections>
+                                            <action selector="singleButtonPressed:" destination="R2u-Ze-cyN" eventType="touchUpInside" id="pUG-lH-5HZ"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gj8-eR-STO">
                                         <rect key="frame" x="0.0" y="135" width="374" height="31"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                        <connections>
+                                            <action selector="singleButtonPressed:" destination="R2u-Ze-cyN" eventType="touchUpInside" id="LA9-Ii-I4P"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -256,16 +268,16 @@
                         <outlet property="questionLabel" destination="D6a-Kc-PqH" id="uZR-Va-fXu"/>
                         <outlet property="rangeStackView" destination="MaN-8H-7AW" id="NTv-Ft-77N"/>
                         <outlet property="singleStackView" destination="cM4-5R-go6" id="4De-4U-C4a"/>
-                        <outletCollection property="singleAnswerButtons" destination="6In-cd-W6H" collectionClass="NSMutableArray" id="D8Q-at-Xwq"/>
                         <outletCollection property="singleAnswerButtons" destination="gj8-eR-STO" collectionClass="NSMutableArray" id="L0c-t0-234"/>
-                        <outletCollection property="singleAnswerButtons" destination="edN-dI-bD0" collectionClass="NSMutableArray" id="lpS-RX-Zt8"/>
-                        <outletCollection property="singleAnswerButtons" destination="ul6-sL-7vv" collectionClass="NSMutableArray" id="btq-hb-N3I"/>
                         <outletCollection property="multipleLabels" destination="ITN-5D-G1d" collectionClass="NSMutableArray" id="pJ9-pb-dVh"/>
                         <outletCollection property="multipleLabels" destination="KII-cm-eJd" collectionClass="NSMutableArray" id="Erz-sh-ftK"/>
                         <outletCollection property="multipleLabels" destination="lb3-Ww-Poh" collectionClass="NSMutableArray" id="7sc-pB-MdV"/>
                         <outletCollection property="multipleLabels" destination="LSn-px-Lhg" collectionClass="NSMutableArray" id="5Gq-9V-y6d"/>
                         <outletCollection property="rangeLabels" destination="Ay9-yf-akY" collectionClass="NSMutableArray" id="TXK-UM-sRG"/>
                         <outletCollection property="rangeLabels" destination="4kS-XU-Ace" collectionClass="NSMutableArray" id="6Aw-CC-FTK"/>
+                        <outletCollection property="singleAnswerButtons" destination="edN-dI-bD0" collectionClass="NSMutableArray" id="kKK-75-aOl"/>
+                        <outletCollection property="singleAnswerButtons" destination="6In-cd-W6H" collectionClass="NSMutableArray" id="zdl-CT-3Di"/>
+                        <outletCollection property="singleAnswerButtons" destination="ul6-sL-7vv" collectionClass="NSMutableArray" id="UNr-cN-yT4"/>
                         <segue destination="0BK-w2-GxQ" kind="push" id="Yfs-th-gh6"/>
                     </connections>
                 </viewController>
