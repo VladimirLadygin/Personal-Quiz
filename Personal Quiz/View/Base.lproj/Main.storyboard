@@ -124,7 +124,10 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rjC-Sm-PrL">
                                         <rect key="frame" x="0.0" y="98.5" width="374" height="31"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Отправить"/>
+                                        <connections>
+                                            <action selector="rangedButtonPressed" destination="R2u-Ze-cyN" eventType="touchUpInside" id="HKZ-Wg-mXm"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -193,7 +196,10 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q8U-Bk-n8s">
                                         <rect key="frame" x="0.0" y="156" width="374" height="31"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Отправить"/>
+                                        <connections>
+                                            <action selector="multiButtonPressedWithSender:" destination="R2u-Ze-cyN" eventType="touchUpInside" id="sKt-oF-Qag"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -267,6 +273,7 @@
                         <outlet property="progress" destination="nVT-1v-res" id="gEG-d1-Cjm"/>
                         <outlet property="questionLabel" destination="D6a-Kc-PqH" id="uZR-Va-fXu"/>
                         <outlet property="rangeStackView" destination="MaN-8H-7AW" id="NTv-Ft-77N"/>
+                        <outlet property="rangedSlider" destination="sNX-gq-ghN" id="kLe-WY-Svl"/>
                         <outlet property="singleStackView" destination="cM4-5R-go6" id="4De-4U-C4a"/>
                         <outletCollection property="singleAnswerButtons" destination="gj8-eR-STO" collectionClass="NSMutableArray" id="L0c-t0-234"/>
                         <outletCollection property="multipleLabels" destination="ITN-5D-G1d" collectionClass="NSMutableArray" id="pJ9-pb-dVh"/>
@@ -278,6 +285,10 @@
                         <outletCollection property="singleAnswerButtons" destination="edN-dI-bD0" collectionClass="NSMutableArray" id="kKK-75-aOl"/>
                         <outletCollection property="singleAnswerButtons" destination="6In-cd-W6H" collectionClass="NSMutableArray" id="zdl-CT-3Di"/>
                         <outletCollection property="singleAnswerButtons" destination="ul6-sL-7vv" collectionClass="NSMutableArray" id="UNr-cN-yT4"/>
+                        <outletCollection property="multipleSwitches" destination="lMG-sd-Pdm" collectionClass="NSMutableArray" id="ASS-Xo-XES"/>
+                        <outletCollection property="multipleSwitches" destination="3t8-Bl-br3" collectionClass="NSMutableArray" id="bnV-ke-jiG"/>
+                        <outletCollection property="multipleSwitches" destination="nkn-gj-KDB" collectionClass="NSMutableArray" id="uX6-T5-piD"/>
+                        <outletCollection property="multipleSwitches" destination="gPn-td-TkY" collectionClass="NSMutableArray" id="m8q-tq-JOp"/>
                         <segue destination="0BK-w2-GxQ" kind="push" id="Yfs-th-gh6"/>
                     </connections>
                 </viewController>

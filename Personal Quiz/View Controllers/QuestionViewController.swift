@@ -16,9 +16,18 @@ class QuestionViewController: UIViewController {
     @IBOutlet var singleAnswerButtons: [UIButton]!
     @IBOutlet var multipleLabels: [UILabel]!
     @IBOutlet weak var progress: UIProgressView!
+    @IBOutlet weak var rangedSlider: UISlider!
     @IBOutlet var rangeLabels: [UILabel]!
+    @IBOutlet var multipleSwitches: [UISwitch]!
     
+    var currentAnswers: [Answer] {
+        Question.all[questionIndex].answers
+    }
     
+    var currentQuestion: Question {
+        Question.all[questionIndex]
+    }
+
     var answerChoosen = [Answer]() {
         didSet {
             print(#line, #function, answerChoosen)
@@ -45,36 +54,35 @@ class QuestionViewController: UIViewController {
                 button.setTitle(nil, for: [])
                 button.tag = index
             }
-            for (button, answer) in zip(singleAnswerButtons, answers) {
+            for (button, answer) in zip(singleAnswerButtons, currentAnswers) {
                 button.setTitle(answer.text, for: [])
             }
         }
         
         func updateMultipleStack() {
             multiplyStackView.isHidden = false
-            for (label, answer) in zip(multipleLabels, answers) {
+            for (label, answer) in zip(multipleLabels, currentAnswers) {
                 label.text = answer.text
             }
         }
         
         func updateRangeStack() {
-            rangeLabels.first?.text = answers.first?.text
-            rangeLabels.last?.text = answers.last?.text
+            rangeLabels.first?.text = currentAnswers.first?.text
+            rangeLabels.last?.text = currentAnswers.last?.text
             rangeStackView.isHidden = false
+            rangedSlider.maximumValue = Float(currentAnswers.count) - 0.01
+            rangedSlider.value = rangedSlider.maximumValue / 2
             
         }
-        let question = Question.all[questionIndex]
         
         
-        let qoestion = Question.all[questionIndex]
-        let answers = question.answers
         let totalProgress = Float(questionIndex) / Float(Question.all.count)
        
         navigationItem.title = "Вопрос № \(questionIndex + 1)"
-        questionLabel.text = question.text
+        questionLabel.text = currentQuestion.text
         progress.setProgress(totalProgress, animated: true)
         
-        switch question.type{
+        switch currentQuestion.type{
         case .single:
             updateSingleStack()
         case .multiple:
@@ -87,6 +95,7 @@ class QuestionViewController: UIViewController {
     
     func nextQuestion() {
         questionIndex = (questionIndex + 1) % Question.all.count
+        updateUI()
     }
     
     @IBAction func singleButtonPressed(_ sender: UIButton) {
@@ -98,7 +107,26 @@ class QuestionViewController: UIViewController {
     
         let answer = answers[index]
         answerChoosen.append(answer)
-//        nextQuestion()
+        nextQuestion()
     }
     
+    @IBAction func multiButtonPressed( sender: UIButton) {
+        for (index, multiSwitch) in multipleSwitches.enumerated() {
+            if multiSwitch.isOn && index < currentAnswers.count {
+                let answer = currentAnswers[index]
+                answerChoosen.append(answer)
+            }
+        }
+        nextQuestion()
+        
+        
+    }
+    
+    @IBAction func rangedButtonPressed() {
+       let index = Int(rangedSlider.value)
+        if index < currentAnswers.count {
+            let answer = currentAnswers[index]
+            answerChoosen.append(answer)
+        }
+    }
 }
