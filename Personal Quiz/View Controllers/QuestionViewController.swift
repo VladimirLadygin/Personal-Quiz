@@ -12,6 +12,13 @@ class QuestionViewController: UIViewController {
     @IBOutlet weak var singleStackView: UIStackView!
     @IBOutlet weak var multiplyStackView: UIStackView!
     @IBOutlet weak var rangeStackView: UIStackView!
+    @IBOutlet weak var questionLabel: UILabel!
+    @IBOutlet var singleAnswerButtons: [UIButton]!
+    @IBOutlet var multipleLabels: [UILabel]!
+    @IBOutlet weak var progress: UIProgressView!
+    @IBOutlet var rangeLabels: [UILabel]!
+    
+    
     
     var questionIndex = 0
     
@@ -28,22 +35,50 @@ class QuestionViewController: UIViewController {
         for stackView in [singleStackView, multiplyStackView, rangeStackView] {
             stackView?.isHidden = true
         }
+        func updateSingleStack() {
+            singleStackView.isHidden = false
+            for button in singleAnswerButtons {
+                button.setTitle(nil, for: [])
+            }
+            for (button, answer) in zip(singleAnswerButtons, answers) {
+                button.setTitle(answer.text, for: [])
+            }
+        }
         
+        func updateMultipleStack() {
+            multiplyStackView.isHidden = false
+            for (label, answer) in zip(multipleLabels, answers) {
+                label.text = answer.text
+            }
+        }
+        
+        func updateRangeStack() {
+            rangeLabels.first?.text = answers.first?.text
+            rangeLabels.last?.text = answers.last?.text
+            rangeStackView.isHidden = false
+            
+        }
         let question = Question.all[questionIndex]
         
-        navigationItem.title = "Вопрос № \(questionIndex + 1)"
         
+        let qoestion = Question.all[questionIndex]
+        let answers = question.answers
+        let totalProgress = Float(questionIndex) / Float(Question.all.count)
+       
+        navigationItem.title = "Вопрос № \(questionIndex + 1)"
+        questionLabel.text = question.text
+        progress.setProgress(totalProgress, animated: true)
         
         switch question.type{
         case .single:
-            singleStackView.isHidden = false
+            updateSingleStack()
         case .multiple:
-            multiplyStackView.isHidden = false
+            updateMultipleStack()
         case .range:
-            rangeStackView.isHidden = false
+            updateRangeStack()
         }
-
+        questionIndex = (questionIndex + 1) % Question.all.count
     }
     
-    
+   
 }
