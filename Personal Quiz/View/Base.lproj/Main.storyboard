@@ -261,13 +261,7 @@
                             <constraint firstAttribute="trailing" secondItem="D6a-Kc-PqH" secondAttribute="trailing" constant="20" id="uH6-u2-Q4k"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="R4Z-d5-oOY">
-                        <barButtonItem key="rightBarButtonItem" title="DELETE ME" id="NMB-Ga-PIz">
-                            <connections>
-                                <segue destination="0BK-w2-GxQ" kind="push" id="ubO-Cu-LN6"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" id="R4Z-d5-oOY"/>
                     <connections>
                         <outlet property="multiplyStackView" destination="GdO-5a-nzs" id="mvQ-Tp-oGp"/>
                         <outlet property="progress" destination="nVT-1v-res" id="gEG-d1-Cjm"/>
@@ -289,45 +283,45 @@
                         <outletCollection property="multipleSwitches" destination="3t8-Bl-br3" collectionClass="NSMutableArray" id="bnV-ke-jiG"/>
                         <outletCollection property="multipleSwitches" destination="nkn-gj-KDB" collectionClass="NSMutableArray" id="uX6-T5-piD"/>
                         <outletCollection property="multipleSwitches" destination="gPn-td-TkY" collectionClass="NSMutableArray" id="m8q-tq-JOp"/>
-                        <segue destination="0BK-w2-GxQ" kind="push" id="Yfs-th-gh6"/>
+                        <segue destination="0BK-w2-GxQ" kind="push" identifier="Results Segue" destinationCreationSelector="resultsSegue:" id="Yfs-th-gh6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="E9h-yX-Wfk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1679.7101449275362" y="83.705357142857139"/>
         </scene>
-        <!--View Controller-->
+        <!--Result View Controller-->
         <scene sceneID="nAc-Pr-a3P">
             <objects>
-                <viewController id="0BK-w2-GxQ" sceneMemberID="viewController">
+                <viewController id="0BK-w2-GxQ" customClass="ResultViewController" customModule="Personal_Quiz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="WFq-4w-eZf">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SRK-SI-lUK">
-                                <rect key="frame" x="20" y="76" width="374" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b3S-Yq-LHs">
-                                <rect key="frame" x="20" y="177" width="374" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="zSE-fO-q14">
+                                <rect key="frame" x="20" y="375.5" width="374" height="91"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SRK-SI-lUK">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="37"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b3S-Yq-LHs">
+                                        <rect key="frame" x="0.0" y="61" width="374" height="30"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="If9-iE-EJb"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="If9-iE-EJb" firstAttribute="trailing" secondItem="b3S-Yq-LHs" secondAttribute="trailing" constant="20" id="2QI-ev-ib1"/>
-                            <constraint firstItem="b3S-Yq-LHs" firstAttribute="top" secondItem="SRK-SI-lUK" secondAttribute="bottom" constant="80" id="AAf-Nv-R1i"/>
-                            <constraint firstItem="b3S-Yq-LHs" firstAttribute="leading" secondItem="If9-iE-EJb" secondAttribute="leading" constant="20" id="Fvh-TH-lb5"/>
-                            <constraint firstItem="SRK-SI-lUK" firstAttribute="top" secondItem="If9-iE-EJb" secondAttribute="top" constant="20" id="PTb-bx-fbP"/>
-                            <constraint firstItem="SRK-SI-lUK" firstAttribute="leading" secondItem="If9-iE-EJb" secondAttribute="leading" constant="20" id="SAK-H7-fVe"/>
-                            <constraint firstItem="SRK-SI-lUK" firstAttribute="leading" secondItem="If9-iE-EJb" secondAttribute="leading" constant="20" id="Vyp-rZ-bsD"/>
-                            <constraint firstItem="If9-iE-EJb" firstAttribute="trailing" secondItem="SRK-SI-lUK" secondAttribute="trailing" constant="20" id="jaY-qL-mRO"/>
-                            <constraint firstItem="If9-iE-EJb" firstAttribute="trailing" secondItem="SRK-SI-lUK" secondAttribute="trailing" constant="20" id="nqh-GV-olc"/>
+                            <constraint firstItem="zSE-fO-q14" firstAttribute="leading" secondItem="If9-iE-EJb" secondAttribute="leading" constant="20" id="1yK-vj-vQw"/>
+                            <constraint firstItem="zSE-fO-q14" firstAttribute="centerY" secondItem="WFq-4w-eZf" secondAttribute="centerY" id="6FB-Ix-kqU"/>
+                            <constraint firstItem="If9-iE-EJb" firstAttribute="trailing" secondItem="zSE-fO-q14" secondAttribute="trailing" constant="20" id="Xx4-he-hUn"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="47E-6h-uSm">
@@ -337,6 +331,10 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="animalLabel" destination="SRK-SI-lUK" id="tPz-xb-zdS"/>
+                        <outlet property="descriptionLabel" destination="b3S-Yq-LHs" id="wDS-GG-4Dv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9vI-bj-UfM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="4Wh-Xl-3rx" userLabel="Exit" sceneMemberID="exit"/>
@@ -363,9 +361,6 @@
             <point key="canvasLocation" x="769.56521739130437" y="83.705357142857139"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="ubO-Cu-LN6"/>
-    </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

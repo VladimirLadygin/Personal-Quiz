@@ -94,8 +94,12 @@ class QuestionViewController: UIViewController {
     }
     
     func nextQuestion() {
-        questionIndex = (questionIndex + 1) % Question.all.count
+        questionIndex += 1
+        if questionIndex < Question.all.count {
         updateUI()
+        } else {
+            performSegue(withIdentifier: "Results Segue", sender: nil)
+        }
     }
     
     @IBAction func singleButtonPressed(_ sender: UIButton) {
@@ -128,5 +132,10 @@ class QuestionViewController: UIViewController {
             let answer = currentAnswers[index]
             answerChoosen.append(answer)
         }
+        nextQuestion()
+    }
+    
+    @IBSegueAction func resultsSegue(_ coder: NSCoder) -> ResultViewController? {
+        return ResultViewController(coder: coder, answers: answerChoosen)
     }
 }
