@@ -64,6 +64,9 @@ class QuestionViewController: UIViewController {
             for (label, answer) in zip(multipleLabels, currentAnswers) {
                 label.text = answer.text
             }
+            for theSwitch in multipleSwitches {
+                theSwitch.isOn = false
+            }
         }
         
         func updateRangeStack() {

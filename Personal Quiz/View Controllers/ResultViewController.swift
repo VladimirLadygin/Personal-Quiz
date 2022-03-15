@@ -36,7 +36,7 @@ class ResultViewController: UIViewController {
         calculatePersonalityResult()
     }
     func updateUI(with animal: AnimalType) {
-        animalLabel.text = "Вы - это\(animal.rawValue)"
+        animalLabel.text = "\(animal.rawValue)"
         descriptionLabel.text = animal.definition
     }
 }
