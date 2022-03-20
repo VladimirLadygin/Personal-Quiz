@@ -13,11 +13,11 @@
 		E701070D27DBC94B00E7002B /* Answer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E701070C27DBC94B00E7002B /* Answer.swift */; };
 		E701070F27DBC9D300E7002B /* AnimalType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E701070E27DBC9D300E7002B /* AnimalType.swift */; };
 		E715C3D227DDE11100B6B38D /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E715C3D127DDE11100B6B38D /* ResultViewController.swift */; };
-		E719C70827E09D0700A5E5D6 /* Homeview.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = E719C70427E09D0700A5E5D6 /* Homeview.jpeg */; };
-		E719C70927E09D0700A5E5D6 /* question View 2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = E719C70527E09D0700A5E5D6 /* question View 2.jpeg */; };
-		E719C70A27E09D0700A5E5D6 /* question View 3.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = E719C70627E09D0700A5E5D6 /* question View 3.jpeg */; };
-		E719C70B27E09D0700A5E5D6 /* question View 1.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = E719C70727E09D0700A5E5D6 /* question View 1.jpeg */; };
-		E719C71527E09E5900A5E5D6 /* Answer.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = E719C71427E09E5900A5E5D6 /* Answer.jpeg */; };
+		E719C70827E09D0700A5E5D6 /* Screenshot1.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = E719C70427E09D0700A5E5D6 /* Screenshot1.jpeg */; };
+		E719C70927E09D0700A5E5D6 /* Screenshot2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = E719C70527E09D0700A5E5D6 /* Screenshot2.jpeg */; };
+		E719C70A27E09D0700A5E5D6 /* Screenshot4.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = E719C70627E09D0700A5E5D6 /* Screenshot4.jpeg */; };
+		E719C70B27E09D0700A5E5D6 /* Screenshot3.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = E719C70727E09D0700A5E5D6 /* Screenshot3.jpeg */; };
+		E719C71527E09E5900A5E5D6 /* Screenshot5.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = E719C71427E09E5900A5E5D6 /* Screenshot5.jpeg */; };
 		E7F2E9AD27D77E2400A9E63C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F2E9AC27D77E2400A9E63C /* AppDelegate.swift */; };
 		E7F2E9AF27D77E2400A9E63C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F2E9AE27D77E2400A9E63C /* SceneDelegate.swift */; };
 		E7F2E9B127D77E2400A9E63C /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F2E9B027D77E2400A9E63C /* WelcomeViewController.swift */; };
@@ -33,11 +33,11 @@
 		E701070C27DBC94B00E7002B /* Answer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Answer.swift; sourceTree = "<group>"; };
 		E701070E27DBC9D300E7002B /* AnimalType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalType.swift; sourceTree = "<group>"; };
 		E715C3D127DDE11100B6B38D /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
-		E719C70427E09D0700A5E5D6 /* Homeview.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Homeview.jpeg; sourceTree = "<group>"; };
-		E719C70527E09D0700A5E5D6 /* question View 2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "question View 2.jpeg"; sourceTree = "<group>"; };
-		E719C70627E09D0700A5E5D6 /* question View 3.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "question View 3.jpeg"; sourceTree = "<group>"; };
-		E719C70727E09D0700A5E5D6 /* question View 1.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "question View 1.jpeg"; sourceTree = "<group>"; };
-		E719C71427E09E5900A5E5D6 /* Answer.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Answer.jpeg; sourceTree = "<group>"; };
+		E719C70427E09D0700A5E5D6 /* Screenshot1.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Screenshot1.jpeg; sourceTree = "<group>"; };
+		E719C70527E09D0700A5E5D6 /* Screenshot2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Screenshot2.jpeg; sourceTree = "<group>"; };
+		E719C70627E09D0700A5E5D6 /* Screenshot4.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Screenshot4.jpeg; sourceTree = "<group>"; };
+		E719C70727E09D0700A5E5D6 /* Screenshot3.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Screenshot3.jpeg; sourceTree = "<group>"; };
+		E719C71427E09E5900A5E5D6 /* Screenshot5.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Screenshot5.jpeg; sourceTree = "<group>"; };
 		E7F2E9A927D77E2400A9E63C /* Personal Quiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Personal Quiz.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7F2E9AC27D77E2400A9E63C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E7F2E9AE27D77E2400A9E63C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -103,11 +103,11 @@
 		E719C70327E09CAB00A5E5D6 /* Screenshots */ = {
 			isa = PBXGroup;
 			children = (
-				E719C70427E09D0700A5E5D6 /* Homeview.jpeg */,
-				E719C70727E09D0700A5E5D6 /* question View 1.jpeg */,
-				E719C70527E09D0700A5E5D6 /* question View 2.jpeg */,
-				E719C70627E09D0700A5E5D6 /* question View 3.jpeg */,
-				E719C71427E09E5900A5E5D6 /* Answer.jpeg */,
+				E719C70427E09D0700A5E5D6 /* Screenshot1.jpeg */,
+				E719C70727E09D0700A5E5D6 /* Screenshot3.jpeg */,
+				E719C70527E09D0700A5E5D6 /* Screenshot2.jpeg */,
+				E719C70627E09D0700A5E5D6 /* Screenshot4.jpeg */,
+				E719C71427E09E5900A5E5D6 /* Screenshot5.jpeg */,
 			);
 			path = Screenshots;
 			sourceTree = "<group>";
@@ -198,13 +198,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E719C70927E09D0700A5E5D6 /* question View 2.jpeg in Resources */,
+				E719C70927E09D0700A5E5D6 /* Screenshot2.jpeg in Resources */,
 				E7F2E9B927D77E2500A9E63C /* LaunchScreen.storyboard in Resources */,
 				E7F2E9B627D77E2500A9E63C /* Assets.xcassets in Resources */,
-				E719C70B27E09D0700A5E5D6 /* question View 1.jpeg in Resources */,
-				E719C71527E09E5900A5E5D6 /* Answer.jpeg in Resources */,
-				E719C70A27E09D0700A5E5D6 /* question View 3.jpeg in Resources */,
-				E719C70827E09D0700A5E5D6 /* Homeview.jpeg in Resources */,
+				E719C70B27E09D0700A5E5D6 /* Screenshot3.jpeg in Resources */,
+				E719C71527E09E5900A5E5D6 /* Screenshot5.jpeg in Resources */,
+				E719C70A27E09D0700A5E5D6 /* Screenshot4.jpeg in Resources */,
+				E719C70827E09D0700A5E5D6 /* Screenshot1.jpeg in Resources */,
 				E7F2E9B427D77E2400A9E63C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
